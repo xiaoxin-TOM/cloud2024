@@ -23,6 +23,7 @@
     </developers>
     <modules>
         <module>mybatis</module>
+        <module>cloud-provider-payment8001</module>
     </modules>
     <scm>
         <connection/>
