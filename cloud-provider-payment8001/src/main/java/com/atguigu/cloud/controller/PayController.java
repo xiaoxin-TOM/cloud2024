@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @Slf4j
 public class PayController {
@@ -36,14 +38,12 @@ public class PayController {
     }
 
     @GetMapping("/pay/get/{id}")
-    public String queryById(@PathVariable Long id){
-        Pay pay = payService.getPayById(id);
-        System.out.println(pay.toString());
-        return pay.toString();
+    public Pay queryById(@PathVariable Long id){
+        return payService.getPayById(id);
     }
 
     @GetMapping("/pay/getAll")
-    public String queryAll(){
-        return payService.getPayList().toString();
+    public List<Pay> queryAll(){
+        return payService.getPayList();
     }
 }
