@@ -25,8 +25,8 @@ public enum ReturnCodeEnum {
     BUSINESS_ERROR("1004", "业务逻辑异常"),
     UNSUPPORTED_GRANT_TYPE("1003", "不支持的认证模式");
 
-    private String code;
-    private String msg;
+    private final String code;
+    private final String msg;
     ReturnCodeEnum(String code, String message) {
         this.code = code;
         this.msg = message;
