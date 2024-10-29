@@ -3,6 +3,7 @@ package com.atguigu.cloud.controller;
 import com.atguigu.cloud.entities.Pay;
 import com.atguigu.cloud.entities.PayDto;
 import com.atguigu.cloud.resp.ResultData;
+import com.atguigu.cloud.resp.ReturnCodeEnum;
 import com.atguigu.cloud.service.PayService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +26,7 @@ public class PayController {
         if( i > 0){
             resultData = ResultData.success(i);
         }else{
-            resultData = ResultData.fail("500","数据插入失败");
+            resultData = ResultData.fail(ReturnCodeEnum.RC500.getCode(),ReturnCodeEnum.RC500.getMsg());
         }
         return resultData;
     }
@@ -37,7 +38,7 @@ public class PayController {
         if(i > 0){
             resultData = ResultData.success(i);
         }else{
-            resultData = ResultData.fail("500","数据删除失败");
+            resultData = ResultData.fail(ReturnCodeEnum.RC500.getCode(),ReturnCodeEnum.RC500.getMsg());
         }
         return resultData;
     }

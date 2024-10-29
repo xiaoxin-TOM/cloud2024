@@ -14,4 +14,9 @@ public class HelloWorldScheduler {
         log.info("输出了定时任务");
         log.info("Hello, world!");
     }
+
+    @Scheduled(cron = "0 0 * * * *")
+    public void mySchedule(){
+        log.info("定时每小时");
+    }
 }
