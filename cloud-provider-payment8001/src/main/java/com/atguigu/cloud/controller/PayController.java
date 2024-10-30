@@ -52,13 +52,16 @@ public class PayController {
         if(i > 0){
             resultData = ResultData.success(i);
         }else{
-            resultData = ResultData.fail("500","数据更新失败");
+            resultData = ResultData.fail(ReturnCodeEnum.RC500.getCode(),ReturnCodeEnum.RC500.getMsg());
         }
         return resultData;
     }
 
     @GetMapping("/pay/get/{id}")
     public ResultData<Pay> queryById(@PathVariable Long id){
+        if(id<0){
+            throw new RuntimeException("查询不能为负数");
+        }
         return ResultData.success(payService.getPayById(id));
     }
 
