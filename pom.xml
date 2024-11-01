@@ -24,6 +24,7 @@
     <modules>
         <module>mybatis</module>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-consumer-order80</module>
     </modules>
     <scm>
         <connection/>
