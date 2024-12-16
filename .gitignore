@@ -2,3 +2,15 @@
 /cloud-consumer-order80/target
 /mybatis/target
 .idea
+/cloud-api-commons/target/cloud-api-commons-0.0.1-SNAPSHOT.jar
+/cloud-api-commons/target/cloud-api-commons-0.0.1-SNAPSHOT.jar.original
+/cloud-api-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/cloud-api-commons/target/classes/com/atguigu/cloud/exp/GlobalExceptionHandler.class
+/cloud-api-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/cloud-api-commons/target/classes/com/atguigu/cloud/Main.class
+/cloud-api-commons/target/classes/com/atguigu/cloud/entities/Pay.class
+/cloud-api-commons/target/classes/com/atguigu/cloud/entities/PayDto.class
+/cloud-api-commons/target/maven-archiver/pom.properties
+/cloud-api-commons/target/classes/com/atguigu/cloud/resp/ResultData.class
+/cloud-api-commons/target/classes/com/atguigu/cloud/resp/ReturnCodeEnum.class
+/cloud-api-commons/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
