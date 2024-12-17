@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResultData<String> ExceptionHandler(Exception e){
-        log.error("异常处理类");
+        log.error("异常处理类",e);
         return ResultData.fail(ReturnCodeEnum.RC500.getCode(),e.getMessage() );
     }
 }
